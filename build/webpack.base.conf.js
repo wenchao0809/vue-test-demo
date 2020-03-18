@@ -4,6 +4,9 @@ const { assetsPath, resolve } = require('./utils')
 // const config = require('../config')
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 // require('babel-polyfill')
+// const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
+const chalk= require('chalk');
 
 module.exports = {
     entry: [resolve('/src/main.js')],
@@ -84,5 +87,8 @@ module.exports = {
 			}
 		]
     },
-    plugins: [ new VueLoaderPlugin() ]
+    plugins: [ 
+		new VueLoaderPlugin(),
+		new FriendlyErrorsWebpackPlugin()
+	]
 }
