@@ -43,7 +43,6 @@ module.exports = merge(baseConfig, {
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css'
-    }),
-    new CompressionWebpackPlugin()
+    })
   ]
 });

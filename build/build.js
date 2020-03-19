@@ -32,8 +32,8 @@ webpack(prodConfig).run((err, stats) => {
       }
     } else {
       // build success
+      console.log('\n\n' + chalk.black.bgGreen('Done') + ' ',  chalk.green(`Compiled successfully in ${stats.endTime - stats.startTime}ms`));
       console.log('\n\n' + formatStats(stats, '/dist'));
-      // console.log('\n\n' + chalk.black.bgGreen('Done') + ' ',  chalk.green(`Compiled successfully in ${stats.endTime - stats.startTime}ms`));
       // let names = Object.keys(stats.compilation.assets);
       // console.log('File\t\t\t\t\tSize\t\t\tGzipped\t\t\t');
       // for(let name of names) {
