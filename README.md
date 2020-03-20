@@ -1,1 +1,1 @@
-vue-unit-test-demo
+[![Build Status](https://travis-ci.org/ET912/vue-test-demo.svg?branch=master)](https://travis-ci.org/ET912/vue-test-demo)

@@ -2,8 +2,10 @@ sudo: required
 language: node_js
 node_js: 
   - '12'
-
+install:
+  - npm install -g codecov
 script:
   - npm test
-  - npm run coverage
+  - npm run report-coverage
   - npm run build
+  - export CODECOV_TOKEN="token"
