@@ -28,7 +28,7 @@ export default {
       this.count++;
     },
     decrease() {
-      if (this.count > 0) --this.count;
+      if (this.count > 0) ++this.count;
     }
   }
 };
