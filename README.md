@@ -1,1 +1,2 @@
 [![Build Status](https://travis-ci.org/ET912/vue-test-demo.svg?branch=master)](https://travis-ci.org/ET912/vue-test-demo)
+[![codecov](https://codecov.io/gh/ET912/vue-test-demo/branch/master/graph/badge.svg)](https://codecov.io/gh/ET912/vue-test-demo)
