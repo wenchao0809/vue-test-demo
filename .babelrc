@@ -15,7 +15,9 @@
         [
           "@babel/preset-env",
           {
-            "useBuiltIns": "entry"
+            "useBuiltIns": "entry",
+            // bablel jest
+            "targets": {  "node": "current" }
           }
         ]
       ],
