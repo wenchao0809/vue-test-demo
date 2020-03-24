@@ -10,7 +10,8 @@
     "coverage": "cross-env NODE_ENV=test nyc --cmd ./  --reporter=json --reporter=text  npm run test",
     "report-coverage": "bash ./upload-codecov.sh -t f153218a-570f-4773-9842-89d3cdc6f487",
     "test:watch": "cross-env NODE_ENV=test mocha-webpack --watch  --webpack-config ./build/webpack.test.conf.js --require test/setup.js --recursive test/**/*.spec.js",
-    "test:jest": "cross-env NODE_ENV=test jest --coverage"
+    "test:jest": "cross-env NODE_ENV=test jest --coverage",
+    "coverag1e": "codecov"
   },
   "author": "dwc",
   "license": "ISC",
@@ -51,10 +52,9 @@
     "jsdom": "^16.2.1",
     "jsdom-global": "^3.0.2",
     "mini-css-extract-plugin": "^0.9.0",
-    "mocha": "6.2.1",
+    "mocha": "^7.1.1 ",
     "mocha-webpack": "^2.0.0-beta.0",
-    "mochapack": "^1.1.13",
-    "nyc": "15.0.0",
+    "nyc": "13.0.0",
     "ora": "^4.0.3",
     "progress-bar-webpack-plugin": "^1.12.1",
     "sass-loader": "^8.0.2",
@@ -72,12 +72,8 @@
     "webpack-node-externals": "^1.7.2"
   },
   "nyc": {
-    "all": true,
     "sourceMap": false,
     "instrument": false,
-    "require": [
-      "@babel/register"
-    ],
     "extension": [
       ".vue",
       ".js"
@@ -99,7 +95,9 @@
       "text"
     ],
     "coverageProvider": "v8",
-    "snapshotSerializers": ["jest-serializer-vue"],
+    "snapshotSerializers": [
+      "jest-serializer-vue"
+    ],
     "moduleFileExtensions": [
       "js",
       "json",
