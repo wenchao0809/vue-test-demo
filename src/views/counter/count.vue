@@ -1,6 +1,8 @@
 <template>
   <div class="vue-count">
-    <p>{{ count }}</p>
+    <p class="text">
+      {{ count }}
+    </p>
     <button
       class="increase_button"
       @click="increase"
@@ -20,7 +22,7 @@
 export default {
   data() {
     return {
-      count: 0
+      count: 8
     };
   },
   methods: {
@@ -28,12 +30,20 @@ export default {
       this.count++;
     },
     decrease() {
+      let x = 1;
+      console.log(x.z.y);
       if (this.count > 0) --this.count;
     }
   }
 };
 </script>
 
-<style>
 
+<style scoped>
+button {
+  color: green;
+}
+.text {
+  color: red;
+}
 </style>

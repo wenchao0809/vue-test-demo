@@ -17,6 +17,7 @@ module.exports = merge(baseConfig, {
       errors: true
     },
     // proxy: config.dev.proxyTable,
+    // https: true,
     hot: true,
     port: 8090
   },
@@ -34,5 +35,6 @@ module.exports = merge(baseConfig, {
         notes: ['Some additional notes to be displayed upon successful compilation']
       }
     })
-  ]
+  ],
+  devtool: 'source-map'
 });

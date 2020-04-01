@@ -16,7 +16,7 @@ module.exports = {
 		semi: 2,
 		quotes: [ 1, 'single' ],
 		indent: ["error", 2],
-		'max-len': [2, { 'code': 100 }],
+		'max-len': [2, { 'code': 1000 }],
 		'no-var': 2,
 		'no-useless-escape': 2,
 		// allow paren-less arrow functions
