@@ -19,7 +19,7 @@ module.exports = merge(baseConfig, {
     // proxy: config.dev.proxyTable,
     // https: true,
     hot: true,
-    port: 8090
+    port: 8091
   },
   plugins: [
     // 	new webpack.DefinePlugin({

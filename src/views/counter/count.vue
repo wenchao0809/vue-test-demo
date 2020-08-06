@@ -23,19 +23,17 @@ export default {
   data() {
     return {
       count: 8
-    };
+    }
   },
   methods: {
     increase() {
-      this.count++;
+      this.count++
     },
     decrease() {
-      let x = 1;
-      console.log(x.z.y);
-      if (this.count > 0) --this.count;
+      if (this.count > 0) --this.count
     }
   }
-};
+}
 </script>
 
 

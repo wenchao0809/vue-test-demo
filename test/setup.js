@@ -1,3 +1,2 @@
-require('jsdom-global')();
-
-global.expect = require('expect');
+require('jsdom-global')()
+global.expect = require('expect')

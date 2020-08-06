@@ -7,14 +7,14 @@ export default {
   data() {
     return {
       msg: 1
-    };
+    }
   },
   methods: {
     add () {
-      return ++this.msg ; 
+      return ++this.msg  
     }
   }
-};
+}
 </script>
 
 <style>

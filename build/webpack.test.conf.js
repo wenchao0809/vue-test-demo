@@ -5,7 +5,7 @@ const prodConf = require('./webpack.prod.conf');
 
 const path = require('path');
 
-module.exports = merge(prodConf, {
+module.exports = merge(devConf, {
   module: {
     rules: [
       // 使用babel

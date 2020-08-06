@@ -13,7 +13,7 @@ module.exports = {
 	},
 	extends: [ 'eslint:recommended', 'plugin:vue/recommended'],
 	rules: {
-		semi: 2,
+		semi: [2, 'never'],
 		quotes: [ 1, 'single' ],
 		indent: ["error", 2],
 		'max-len': [2, { 'code': 1000 }],

@@ -25,6 +25,7 @@ module.exports = merge(baseConfig, {
         }
       })
     ],
+    // 增加这个配置会导致测试侦听模式无效
     runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
