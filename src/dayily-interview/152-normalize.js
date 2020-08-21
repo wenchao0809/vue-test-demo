@@ -5,7 +5,7 @@
  * 递归版本
  * @param {string} str 
  */
-function normalizeRecur(str) {
+export function normalizeRecur(str) {
   const matchRe = /^\[.*\]$/
   const valueRe = /^\[([^\[\]]*)/
   let root = {}
@@ -20,11 +20,10 @@ function normalizeRecur(str) {
   return root
 }
 /**
- * 思路类似html标签解析
  * @param {string} str 
  */
-function normalize(str) {
-  let stack = []
+export function normalize(str) {
+  const stack = []
   const  startRe = /^\[/
   const endRe = /^\]/
   const valueRe = /^\[([^\[\]]*)/
